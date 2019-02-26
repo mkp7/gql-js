@@ -1,0 +1,17 @@
+{
+  "name": "gql-js",
+  "version": "0.0.9",
+  "description": "A GraphQL implementation in js, a project at GeekSkool.",
+  "main": "./main.js",
+  "repository": "github.com:mkp7/gql-js",
+  "author": "Mehulkumar <m3hul.g4m3r@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^5.12.1",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0"
+  }
+}

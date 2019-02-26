@@ -1,0 +1,12 @@
+type Todo {
+  id: ID!
+  name: String!
+}
+
+type Query {
+  allTodos: [Todo!]!
+}
+
+schema {
+  query: Query
+}
