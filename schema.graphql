@@ -1,0 +1,13 @@
+type User {
+  fullName: String!
+  userName: String!
+  emailAddr: String
+}
+
+type Query {
+  user: User!
+}
+
+schema {
+  query: Query
+}
