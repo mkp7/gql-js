@@ -34,10 +34,10 @@ const fieldsParser = inp => {
   }
 
   let remInp = inp.slice(match[0].length)
-  const fields = []
+  const fields = {}
   match = fieldParser(remInp)
   while (match !== null) {
-    fields.push(match[0])
+    Object.assign(fields, match[0])
     remInp = match[1]
     match = fieldParser(remInp)
   }
