@@ -1,6 +1,7 @@
 const SchemaParser = require('./schema_parser')
+const operationDefinitionParser = require('./client_request_parser')
 
-module.exports = { SchemaParser }
+module.exports = { SchemaParser, operationDefinitionParser }
 
 // SERVER
 // Define types

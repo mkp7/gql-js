@@ -1,5 +1,5 @@
 // Scalar Types
-const ScalarTypes = ['String']
+const ScalarTypes = ['String', 'Int']
 
 // Object Type Parser
 // ^\s*type\s+(\w+)\s+\{(\s*(\w+)\s*:\s*(String|Int)!?)+\s*\}
