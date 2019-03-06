@@ -29,7 +29,7 @@ app.get('/', (req, res) => {
 })
 
 app.post('/graphql-api', (req, res) => {
-  console.log(req.body.toString('utf8'))
+  console.log(GraphQL.operationDefinitionParser(req.body.query))
 
   res.body = 'pong'
 
