@@ -13,17 +13,22 @@ const objectTypeParser = inp => {
 
   let remInp = inp.slice(match[0].length)
   const name = match[1]
-  const fields = []
+  const fields = {}
 
   expr = /^\s*(\w+)\s*:\s*(\w+)(!?)/
   match = expr.exec(remInp)
 
   while (match !== null) {
-    fields.push({
+    fields[match[1]] = {
       name: match[1],
       type: match[2],
       requried: match[3] === '!'
-    })
+    }
+    // fields.push({
+    //   name: match[1],
+    //   type: match[2],
+    //   requried: match[3] === '!'
+    // })
     remInp = remInp.slice(match[0].length)
     match = expr.exec(remInp)
   }
