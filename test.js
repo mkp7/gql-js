@@ -18,7 +18,7 @@ const Schema = GraphQL.SchemaParser(RawSchema)
 console.log(Schema)
 
 // Test GraphQL OperationDefinition parser
-const RawOperation = fs.readFileSync('test_query.txt', { encoding: 'utf8' })
+const RawOperation = fs.readFileSync('test_query.graphql', { encoding: 'utf8' })
 const Operation = GraphQL.operationDefinitionParser(RawOperation)
 console.log(Operation)
 

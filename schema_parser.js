@@ -24,11 +24,6 @@ const objectTypeParser = inp => {
       type: match[2],
       requried: match[3] === '!'
     }
-    // fields.push({
-    //   name: match[1],
-    //   type: match[2],
-    //   requried: match[3] === '!'
-    // })
     remInp = remInp.slice(match[0].length)
     match = expr.exec(remInp)
   }
